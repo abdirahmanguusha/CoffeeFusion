@@ -1,294 +1,328 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
 }
 
 :root {
-    --primary-color: #3b141c;
-    --secondary-color: ##f3961c;
-    --dark-color: #252525;
-    --white-color: #fff;
-    --light-gray-color: #f2f2f2;
-    --site-max-width: 1300px;
+  --primary-color: #3b141c;
+  --secondary-color: #f3961c;
+  --dark-color: #252525;
+  --white-color: #fff;
+  --light-gray-color: #f2f2f2;
+  --site-max-width: 1300px;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: var(--white-color);
+  background-color: var(--white-color);
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
-
 header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: var(--primary-color);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--primary-color);
 }
 
 nav {
-    display: flex;
-    padding: 15px 0 15px 20px;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    max-width: var(--site-max-width);
+  display: flex;
+  padding: 15px 0 15px 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: var(--site-max-width);
 }
 
 nav .nav_logo a {
-    display: flex;
-    gap: 15px;
-    align-items: center;
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
 
 nav .nav_logo a img {
-    max-width: 56px;
+  max-width: 56px;
 }
 
-
-
 nav .nav_logo h2 {
-    color: var(--white-color);
-    font-weight: 600;
-    font-size: 32px;
+  color: var(--white-color);
+  font-weight: 600;
+  font-size: 32px;
 }
 
 nav ul {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
-
-
 nav ul li a {
-
-    display: block;
-    padding: 10px 25px;
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--white-color);
-    border-radius: 30px;
-    transition: all 0.2s ease;
-    
+  display: block;
+  padding: 10px 25px;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--white-color);
+  border-radius: 30px;
+  transition: all 0.2s ease;
 }
 
 nav ul li a:hover {
-    color: #BF9E87;
-    background-color: var(--secondary-color);
+  color: #bf9e87;
+  background-color: var(--secondary-color);
 }
 
 nav label {
-    font-size: 32px;
-    color: var(--white-color);
-    cursor: pointer;
+  font-size: 32px;
+  color: var(--white-color);
+  cursor: pointer;
 }
 
 label .menu_btn,
 label .close_btn {
-    display: none;
+  display: none;
 }
 
 #click {
-    display: none;
+  display: none;
 }
-
 
 /* Hero Section */
 .hero_section {
-    min-height: 100vh;
-    background: var(--primary-color);
+  min-height: 100vh;
+  background: var(--primary-color);
 }
 
 .hero_container {
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-    align-items: center;
-    padding-top: 85px;
-    min-height: calc(100vh - 85px);
-    justify-content: space-between;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+  padding-top: 85px;
+  min-height: calc(100vh - 85px);
+  justify-content: space-between;
 }
 
 .hero_container .text_section h2 {
-    font-size: 40px;
-    color: var(--secondary-color);
+  font-size: 40px;
+  color: var(--secondary-color);
 }
 
 .hero_container .text_section h3 {
-    font-size: 35px;
-    font-weight: 600;
-    color: var(--white-color);
-    margin-top: 8px;
+  font-size: 35px;
+  font-weight: 600;
+  color: var(--white-color);
+  margin-top: 8px;
 }
 
 .hero_container .text_section p {
-    font-size: 20px;
-    font-weight: 400;
-    color: var(--white-color);
-    margin: 24px 0 40px;
-    max-width: 70%;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--white-color);
+  margin: 24px 0 40px;
+  max-width: 70%;
 }
 
 .hero_container .hero_section_button {
-    display: flex;
-    gap: 24px;
+  display: flex;
+  gap: 24px;
 }
 
 .hero_container .hero_section_button .button {
-    padding: 8px 28px;
-    border: 2px solid transparent;
-    outline: none;
-    cursor: pointer;
-    border-radius: 50px;
-    background: var(--secondary-color);
-    color: var(--primary-color);
-    font-size: 18px;
-    font-weight: 600;
-    transition: all 0.4s ease;
+  padding: 8px 28px;
+  border: 2px solid transparent;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50px;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.4s ease;
 }
 
 .hero_container .hero_section_button .button:last-child {
-    color: var(--white-color);
-    border-color: var(--white-color);
-    background: none;
+  color: var(--white-color);
+  border-color: var(--white-color);
+  background: none;
 }
 
 .hero_container .hero_section_button .button:first-child:hover {
-    color: var(--white-color);
-    background: transparent;
-    border-color: var(--white-color);
+  color: var(--white-color);
+  background: transparent;
+  border-color: var(--white-color);
 }
 
 .hero_container .hero_section_button .button:last-child:hover {
-    color: var(--primary-color);
-    background: var(--secondary-color);
-    border-color: var(--secondary-color);
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
 
 .hero_container .image_section {
-    max-width: 45%;
+  max-width: 45%;
 }
 
 .hero_container .image_section img {
-    width: 100%;
+  width: 100%;
 }
 
 .section_container {
-    margin: 0 auto;
-    max-width: var(--site-max-width);
+  margin: 0 auto;
+  max-width: var(--site-max-width);
 }
 
 .section_title {
-    text-align: center;
-    padding: 60px 0 100px;
-    font-size: 32px;
-    font-family: "Righteous", sans-serif;
-    text-transform: uppercase;
+  text-align: center;
+  padding: 60px 0 100px;
+  font-size: 32px;
+  font-family: "Righteous", sans-serif;
+  text-transform: uppercase;
 }
 
 .section_title::after {
-    content: "";
-    width: 80px;
-    background-color: var(--secondary-color);
+  content: "";
+  width: 80px;
+  background-color: var(--secondary-color);
 }
 
-
 .section_title::after {
-    content: '';
-    width: 80px;
-    background: var(--secondary-color);
-    height: 5px;
-    display: block;
-    margin: 7px auto 0;
-    border-radius: 8px;
+  content: "";
+  width: 80px;
+  background: var(--secondary-color);
+  height: 5px;
+  display: block;
+  margin: 7px auto 0;
+  border-radius: 8px;
 }
 
 /* About Us Section */
 
 .about_us {
-    padding: 60px 20px 120px;
-    background-color: var(--light-gray-color);
-
+  padding: 60px 20px 120px;
+  background-color: var(--light-gray-color);
 }
 
 .about_container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
 }
 
 .about_container .text_section {
-    max-width: 50%;
-
+  max-width: 50%;
 }
 
 .about_container .text_section p {
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    line-height: 30px;
-    text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-align: center;
 }
 
-;
-
 .about_container .image_section img {
-    width: 100%;
-
+  width: 100%;
 }
 
 /* Services Section */
 
 .services {
-    background: var(--dark-color);
-    color: var(--white-color);
-    padding: 60px 20px 120px;
+  background: var(--dark-color);
+  color: var(--white-color);
+  padding: 60px 20px 120px;
 }
 
 .services .service_container {
-    display: flex;
-    justify-content: space-around;
-    gap: 120px;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  gap: 120px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .section_container .services_items img {
-    width: 100%;
+  width: 100%;
 }
 
 .section_container .services_items {
-    width: calc(100% / 4);
-    box-shadow: 0 10px 15px rgba(255, 255, 270, 0.5);
-    padding: 12px;
+  width: calc(100% / 4);
+  box-shadow: 0 10px 15px rgba(255, 255, 270, 0.5);
+  padding: 12px;
 }
 
 .services_items .services_text {
-    text-align: center;
+  text-align: center;
 }
 
 .services_items .services_text h3 {
-    margin: 12px 0;
-    font-weight: 600;
-    font-size: 24px;
+  margin: 12px 0;
+  font-weight: 600;
+  font-size: 24px;
 }
 
 .services_items .services_text p {
+  font-size: 17px;
+}
+
+/*  start of Why Us Section css code  */
+
+.why_us {
+    background: var(--light-gray-color);
+    padding: 60px 20px 120px;
+}
+.why_us .why_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.why_container .why_items img {
+    width: 30%;
+    margin-bottom: 10px;
+}
+.why_container .why_items {
+    width: calc(100% / 3.6);
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+}
+.why_items .why_us_text {
+    text-align: center;
+}
+.why_items .why_us_text h3 {
+    margin: 20px 0;
+    font-size: 22px;
+}
+.why_items .why_us_text p {
     font-size: 17px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
