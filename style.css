@@ -315,8 +315,39 @@ label .close_btn {
     font-size: 17px;
 }
 
+/* start of  Gallery Section css code */
+.gallery {
+  background: var(--white-color);
+  padding:60px 20px 100px ;
+
+}
+
+.gallery .gallery_container{
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.gallery_container .gallery_items{
+  width: calc(100% / 3.2 );
+  overflow: hidden;
+  border-radius: 8px;
+
+}
 
 
+.gallery .gallery_container img {
+  width: 100%;
+border-radius: 8px;
+transition: transform 0.4s ease;
+
+}
+
+.gallery_container .gallery_items:hover img {
+  transform: scale(1.3);
+}
 
 
 
