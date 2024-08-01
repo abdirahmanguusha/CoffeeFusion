@@ -426,9 +426,42 @@ transition: transform 0.4s ease;
   font-size: 32px;
   margin-top: 5px;
 }
+/* this is the start of footer css code */
+
+footer{
+  background: #1b1b1b;
+  color: var(--white-color);
+  padding: 61px 20px;
+
+}
+
+.footer_section{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.footer_section .footer_logo a{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: var(--white-color);
 
 
+}
 
+.footer_section .footer_logo a img{
+  max-width: 55px;
+
+}
+
+.footer_section .footer_logo a h2{
+  font-weight: 600;
+}
+
+.footer_section .useful_links ul li{
+  max-resolution: 20px 0;
+}
 
 
 
